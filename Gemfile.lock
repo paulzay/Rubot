@@ -51,5 +51,4 @@ DEPENDENCIES
   rspec (~> 3.5)
   telegram-bot-ruby
 
-BUNDLED WITH
-   2.1.4
+
