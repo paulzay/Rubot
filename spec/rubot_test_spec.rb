@@ -19,7 +19,7 @@ describe Shakespeare do
     end
 
     it 'should have four key and value pairs' do
-      expect(random_response.length).to eql(4)
+      expect(random_response.count).to eql(4)
     end
   end
 end
