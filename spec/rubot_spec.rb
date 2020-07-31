@@ -1,6 +1,6 @@
 require_relative '../lib/william.rb'
 
-describe Shakespeare do
+RSpec.describe Shakespeare do
   describe '#fetch_poems' do
     let(:request) { Shakespeare.new }
     let(:response) { request.fetch_poems }
