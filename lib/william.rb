@@ -1,10 +1,9 @@
-# require 'telegram/bot'
 require 'net/http'
 require 'json'
 require_relative 'bot.rb'
 
 class Shakespeare
-  @poems = nil
+  attr_accessor :poems
 
   def initialize
     @poems = fetch_poems

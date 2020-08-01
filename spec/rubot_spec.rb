@@ -1,4 +1,5 @@
 require_relative '../lib/william.rb'
+require_relative '../lib/bot.rb'
 
 describe Shakespeare do
   describe '#fetch_poems' do
@@ -20,6 +21,15 @@ describe Shakespeare do
 
     it 'should have four key and value pairs' do
       expect(random_response.count).to eql(4)
+    end
+  end
+end
+
+describe Bot do
+  describe '#initialize' do
+    let(:rubot) { Bot.new }
+    it "returns same class as the bot" do
+      expect(rubot.class).to eql Bot
     end
   end
 end
