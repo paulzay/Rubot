@@ -28,7 +28,7 @@ end
 describe Bot do
   describe '#initialize' do
     let(:rubot) { Bot.new }
-    it "returns same class as the bot" do
+    it 'returns same class as the bot' do
       expect(rubot.class).to eql Bot
     end
   end

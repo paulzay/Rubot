@@ -8,8 +8,8 @@ class Bot
     @token = '1372499641:AAGWgBpmGNfQDh43yHtQNXAe1Lv6W_PL5O4'
     begin
       run_bot
-    rescue Telegram::Bot::Exceptions::ResponseError => error
-      puts "Run failed: #{error}"
+    rescue Telegram::Bot::Exceptions::ResponseError => e
+      puts "Run failed: #{e}"
     end
   end
 
